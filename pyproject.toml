@@ -1,0 +1,11 @@
+[project]
+name = "rpr-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "atlassian-python-api>=4.0.4",
+    "fastapi[standard]>=0.115.12",
+    "mcp[cli]>=1.9.3",
+]
