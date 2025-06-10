@@ -1,0 +1,1857 @@
+{
+    "size": 6,
+    "limit": 25,
+    "isLastPage": true,
+    "values": [
+        {
+            "id": 947,
+            "version": 327,
+            "title": "Staging",
+            "description": "aaaa",
+            "state": "OPEN",
+            "open": true,
+            "closed": false,
+            "draft": false,
+            "createdDate": 1742616725403,
+            "updatedDate": 1749546229807,
+            "fromRef": {
+                "id": "refs/heads/staging",
+                "displayId": "staging",
+                "latestCommit": "a6a69cdec4b78382c61ded83221c39823af389be",
+                "type": "BRANCH",
+                "repository": {
+                    "slug": "cdcn-customer-service",
+                    "id": 955,
+                    "name": "cdcn-customer-service",
+                    "hierarchyId": "d6f130f732ef852a9a87",
+                    "scmId": "git",
+                    "state": "AVAILABLE",
+                    "statusMessage": "Available",
+                    "forkable": true,
+                    "project": {
+                        "key": "CDCN",
+                        "id": 2,
+                        "name": "cdcn",
+                        "public": false,
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/projects/CDCN"
+                                }
+                            ]
+                        }
+                    },
+                    "public": false,
+                    "archived": false,
+                    "links": {
+                        "clone": [
+                            {
+                                "href": "http://bitbucket.digital.vn/scm/cdcn/cdcn-customer-service.git",
+                                "name": "http"
+                            },
+                            {
+                                "href": "ssh://git@10.254.136.31:8081/cdcn/cdcn-customer-service.git",
+                                "name": "ssh"
+                            }
+                        ],
+                        "self": [
+                            {
+                                "href": "http://bitbucket.digital.vn/projects/CDCN/repos/cdcn-customer-service/browse"
+                            }
+                        ]
+                    }
+                }
+            },
+            "toRef": {
+                "id": "refs/heads/staging-origin-epass",
+                "displayId": "staging-origin-epass",
+                "latestCommit": "6121174f0cd3aff87222abde83f8917ee1f42ead",
+                "type": "BRANCH",
+                "repository": {
+                    "slug": "cdcn-customer-service",
+                    "id": 955,
+                    "name": "cdcn-customer-service",
+                    "hierarchyId": "d6f130f732ef852a9a87",
+                    "scmId": "git",
+                    "state": "AVAILABLE",
+                    "statusMessage": "Available",
+                    "forkable": true,
+                    "project": {
+                        "key": "CDCN",
+                        "id": 2,
+                        "name": "cdcn",
+                        "public": false,
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/projects/CDCN"
+                                }
+                            ]
+                        }
+                    },
+                    "public": false,
+                    "archived": false,
+                    "links": {
+                        "clone": [
+                            {
+                                "href": "http://bitbucket.digital.vn/scm/cdcn/cdcn-customer-service.git",
+                                "name": "http"
+                            },
+                            {
+                                "href": "ssh://git@10.254.136.31:8081/cdcn/cdcn-customer-service.git",
+                                "name": "ssh"
+                            }
+                        ],
+                        "self": [
+                            {
+                                "href": "http://bitbucket.digital.vn/projects/CDCN/repos/cdcn-customer-service/browse"
+                            }
+                        ]
+                    }
+                }
+            },
+            "locked": false,
+            "author": {
+                "user": {
+                    "name": "trungmt3",
+                    "emailAddress": "trungmt3@viettel.com.vn",
+                    "active": true,
+                    "displayName": "trungmt3 trungmt3",
+                    "id": 2871,
+                    "slug": "trungmt3",
+                    "type": "NORMAL",
+                    "links": {
+                        "self": [
+                            {
+                                "href": "http://bitbucket.digital.vn/users/trungmt3"
+                            }
+                        ]
+                    }
+                },
+                "role": "AUTHOR",
+                "approved": false,
+                "status": "UNAPPROVED"
+            },
+            "reviewers": [],
+            "participants": [
+                {
+                    "user": {
+                        "name": "dungdt75",
+                        "emailAddress": "dungdt75@viettel.com.vn",
+                        "active": true,
+                        "displayName": "dungdt75 dungdt75",
+                        "id": 2753,
+                        "slug": "dungdt75",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/dungdt75"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "PARTICIPANT",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "os_iist_tulv",
+                        "emailAddress": "tulv@iist.com.vn",
+                        "active": true,
+                        "displayName": "os_iist_tulv os_iist_tulv",
+                        "id": 276,
+                        "slug": "os_iist_tulv",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/os_iist_tulv"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "PARTICIPANT",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "os_biplus_ducnlt",
+                        "emailAddress": "ducnlt@biplus.com.vn",
+                        "active": true,
+                        "displayName": "os_biplus_ducnlt os_biplus_ducnlt",
+                        "id": 451,
+                        "slug": "os_biplus_ducnlt",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/os_biplus_ducnlt"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "PARTICIPANT",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "tungdd9",
+                        "emailAddress": "tungdd9@viettel.com.vn",
+                        "active": true,
+                        "displayName": "tungdd9 tungdd9",
+                        "id": 1144,
+                        "slug": "tungdd9",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/tungdd9"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "PARTICIPANT",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "duynk18",
+                        "emailAddress": "duynk18@viettel.com.vn",
+                        "active": true,
+                        "displayName": "duynk18",
+                        "id": 2459,
+                        "slug": "duynk18",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/duynk18"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "PARTICIPANT",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "thangnd63",
+                        "emailAddress": "thangnd63@viettel.com.vn",
+                        "active": true,
+                        "displayName": "thangnd63 thangnd63",
+                        "id": 396,
+                        "slug": "thangnd63",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/thangnd63"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "PARTICIPANT",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "bopt",
+                        "emailAddress": "bopt@viettel.com.vn",
+                        "active": true,
+                        "displayName": "bopt",
+                        "id": 454,
+                        "slug": "bopt",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/bopt"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "PARTICIPANT",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "hoangnv71",
+                        "emailAddress": "hoangnv71@viettel.com.vn",
+                        "active": true,
+                        "displayName": "hoangnv71 hoangnv71",
+                        "id": 489,
+                        "slug": "hoangnv71",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/hoangnv71"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "PARTICIPANT",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "haihn5",
+                        "emailAddress": "haihn5@viettel.com.vn",
+                        "active": true,
+                        "displayName": "haihn5 haihn5",
+                        "id": 2811,
+                        "slug": "haihn5",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/haihn5"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "PARTICIPANT",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "duongbh2",
+                        "emailAddress": "duongbh2@viettel.com.vn",
+                        "active": true,
+                        "displayName": "duongbh2 duongbh2",
+                        "id": 2728,
+                        "slug": "duongbh2",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/duongbh2"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "PARTICIPANT",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "lamht11",
+                        "emailAddress": "lamht11@viettel.com.vn",
+                        "active": true,
+                        "displayName": "lamht11 lamht11",
+                        "id": 2045,
+                        "slug": "lamht11",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/lamht11"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "PARTICIPANT",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "truonglx7",
+                        "emailAddress": "truonglx7@viettel.com.vn",
+                        "active": true,
+                        "displayName": "Lê Xuân Trường",
+                        "id": 2869,
+                        "slug": "truonglx7",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/truonglx7"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "PARTICIPANT",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                }
+            ],
+            "properties": {
+                "mergeResult": {
+                    "outcome": "CLEAN",
+                    "current": true
+                },
+                "resolvedTaskCount": 0,
+                "commentCount": 0,
+                "openTaskCount": 0
+            },
+            "links": {
+                "self": [
+                    {
+                        "href": "http://bitbucket.digital.vn/projects/CDCN/repos/cdcn-customer-service/pull-requests/947"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1294,
+            "version": 29,
+            "title": "[OB] Cr Onboarding t5",
+            "state": "OPEN",
+            "open": true,
+            "closed": false,
+            "draft": false,
+            "createdDate": 1748419233696,
+            "updatedDate": 1749177907524,
+            "fromRef": {
+                "id": "refs/heads/feature/iist/release/CR_Onboarding_t5",
+                "displayId": "feature/iist/release/CR_Onboarding_t5",
+                "latestCommit": "a1def566a274517b1f8ca3242b1f3a0b517c6879",
+                "type": "BRANCH",
+                "repository": {
+                    "slug": "cdcn-customer-service",
+                    "id": 955,
+                    "name": "cdcn-customer-service",
+                    "hierarchyId": "d6f130f732ef852a9a87",
+                    "scmId": "git",
+                    "state": "AVAILABLE",
+                    "statusMessage": "Available",
+                    "forkable": true,
+                    "project": {
+                        "key": "CDCN",
+                        "id": 2,
+                        "name": "cdcn",
+                        "public": false,
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/projects/CDCN"
+                                }
+                            ]
+                        }
+                    },
+                    "public": false,
+                    "archived": false,
+                    "links": {
+                        "clone": [
+                            {
+                                "href": "http://bitbucket.digital.vn/scm/cdcn/cdcn-customer-service.git",
+                                "name": "http"
+                            },
+                            {
+                                "href": "ssh://git@10.254.136.31:8081/cdcn/cdcn-customer-service.git",
+                                "name": "ssh"
+                            }
+                        ],
+                        "self": [
+                            {
+                                "href": "http://bitbucket.digital.vn/projects/CDCN/repos/cdcn-customer-service/browse"
+                            }
+                        ]
+                    }
+                }
+            },
+            "toRef": {
+                "id": "refs/heads/release",
+                "displayId": "release",
+                "latestCommit": "23b8afc044b02da0fd3a89834301a864d2df5b77",
+                "type": "BRANCH",
+                "repository": {
+                    "slug": "cdcn-customer-service",
+                    "id": 955,
+                    "name": "cdcn-customer-service",
+                    "hierarchyId": "d6f130f732ef852a9a87",
+                    "scmId": "git",
+                    "state": "AVAILABLE",
+                    "statusMessage": "Available",
+                    "forkable": true,
+                    "project": {
+                        "key": "CDCN",
+                        "id": 2,
+                        "name": "cdcn",
+                        "public": false,
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/projects/CDCN"
+                                }
+                            ]
+                        }
+                    },
+                    "public": false,
+                    "archived": false,
+                    "links": {
+                        "clone": [
+                            {
+                                "href": "http://bitbucket.digital.vn/scm/cdcn/cdcn-customer-service.git",
+                                "name": "http"
+                            },
+                            {
+                                "href": "ssh://git@10.254.136.31:8081/cdcn/cdcn-customer-service.git",
+                                "name": "ssh"
+                            }
+                        ],
+                        "self": [
+                            {
+                                "href": "http://bitbucket.digital.vn/projects/CDCN/repos/cdcn-customer-service/browse"
+                            }
+                        ]
+                    }
+                }
+            },
+            "locked": false,
+            "author": {
+                "user": {
+                    "name": "os_iist_tulv",
+                    "emailAddress": "tulv@iist.com.vn",
+                    "active": true,
+                    "displayName": "os_iist_tulv os_iist_tulv",
+                    "id": 276,
+                    "slug": "os_iist_tulv",
+                    "type": "NORMAL",
+                    "links": {
+                        "self": [
+                            {
+                                "href": "http://bitbucket.digital.vn/users/os_iist_tulv"
+                            }
+                        ]
+                    }
+                },
+                "role": "AUTHOR",
+                "approved": false,
+                "status": "UNAPPROVED"
+            },
+            "reviewers": [
+                {
+                    "user": {
+                        "name": "tungdd9",
+                        "emailAddress": "tungdd9@viettel.com.vn",
+                        "active": true,
+                        "displayName": "tungdd9 tungdd9",
+                        "id": 1144,
+                        "slug": "tungdd9",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/tungdd9"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "thangnd63",
+                        "emailAddress": "thangnd63@viettel.com.vn",
+                        "active": true,
+                        "displayName": "thangnd63 thangnd63",
+                        "id": 396,
+                        "slug": "thangnd63",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/thangnd63"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                }
+            ],
+            "participants": [
+                {
+                    "user": {
+                        "name": "dungdt75",
+                        "emailAddress": "dungdt75@viettel.com.vn",
+                        "active": true,
+                        "displayName": "dungdt75 dungdt75",
+                        "id": 2753,
+                        "slug": "dungdt75",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/dungdt75"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "PARTICIPANT",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                }
+            ],
+            "properties": {
+                "mergeResult": {
+                    "outcome": "CONFLICTED",
+                    "current": true
+                },
+                "resolvedTaskCount": 0,
+                "commentCount": 20,
+                "openTaskCount": 0
+            },
+            "links": {
+                "self": [
+                    {
+                        "href": "http://bitbucket.digital.vn/projects/CDCN/repos/cdcn-customer-service/pull-requests/1294"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1333,
+            "version": 3,
+            "title": "Trungmt3/release/tra cuu vi rv",
+            "description": "* Revert \"tra cuu vi (fix)\"\n\n    This reverts commit ba538742da93e9c34ad2d94bf2e272b7adbc4782.\n\n* Revert \"tra cuu vi (fix)\"\n\n    This reverts commit 669ee218f39052972a63b6e393b038ae68c7fd50.\n\n* Revert \"Revert \"Revert \"tra cuu vi\"\"\"\n\n    This reverts commit b539b1624840d6a6b8ec30f324b763ce5fcb96a2.\n\n* Revert \"Revert \"Revert \"tra cuu vi\"\"\"\n\n    This reverts commit ad8e97f8bd07cb99a10a61a0e4e203bc868bf9e3.",
+            "state": "OPEN",
+            "open": true,
+            "closed": false,
+            "draft": false,
+            "createdDate": 1749144941073,
+            "updatedDate": 1749144941073,
+            "fromRef": {
+                "id": "refs/heads/trungmt3/release/tra-cuu-vi-rv",
+                "displayId": "trungmt3/release/tra-cuu-vi-rv",
+                "latestCommit": "7410454dfac31a1adf7e83547f35ae5b95ab8a9c",
+                "type": "BRANCH",
+                "repository": {
+                    "slug": "cdcn-customer-service",
+                    "id": 955,
+                    "name": "cdcn-customer-service",
+                    "hierarchyId": "d6f130f732ef852a9a87",
+                    "scmId": "git",
+                    "state": "AVAILABLE",
+                    "statusMessage": "Available",
+                    "forkable": true,
+                    "project": {
+                        "key": "CDCN",
+                        "id": 2,
+                        "name": "cdcn",
+                        "public": false,
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/projects/CDCN"
+                                }
+                            ]
+                        }
+                    },
+                    "public": false,
+                    "archived": false,
+                    "links": {
+                        "clone": [
+                            {
+                                "href": "http://bitbucket.digital.vn/scm/cdcn/cdcn-customer-service.git",
+                                "name": "http"
+                            },
+                            {
+                                "href": "ssh://git@10.254.136.31:8081/cdcn/cdcn-customer-service.git",
+                                "name": "ssh"
+                            }
+                        ],
+                        "self": [
+                            {
+                                "href": "http://bitbucket.digital.vn/projects/CDCN/repos/cdcn-customer-service/browse"
+                            }
+                        ]
+                    }
+                }
+            },
+            "toRef": {
+                "id": "refs/heads/release",
+                "displayId": "release",
+                "latestCommit": "23b8afc044b02da0fd3a89834301a864d2df5b77",
+                "type": "BRANCH",
+                "repository": {
+                    "slug": "cdcn-customer-service",
+                    "id": 955,
+                    "name": "cdcn-customer-service",
+                    "hierarchyId": "d6f130f732ef852a9a87",
+                    "scmId": "git",
+                    "state": "AVAILABLE",
+                    "statusMessage": "Available",
+                    "forkable": true,
+                    "project": {
+                        "key": "CDCN",
+                        "id": 2,
+                        "name": "cdcn",
+                        "public": false,
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/projects/CDCN"
+                                }
+                            ]
+                        }
+                    },
+                    "public": false,
+                    "archived": false,
+                    "links": {
+                        "clone": [
+                            {
+                                "href": "http://bitbucket.digital.vn/scm/cdcn/cdcn-customer-service.git",
+                                "name": "http"
+                            },
+                            {
+                                "href": "ssh://git@10.254.136.31:8081/cdcn/cdcn-customer-service.git",
+                                "name": "ssh"
+                            }
+                        ],
+                        "self": [
+                            {
+                                "href": "http://bitbucket.digital.vn/projects/CDCN/repos/cdcn-customer-service/browse"
+                            }
+                        ]
+                    }
+                }
+            },
+            "locked": false,
+            "author": {
+                "user": {
+                    "name": "trungmt3",
+                    "emailAddress": "trungmt3@viettel.com.vn",
+                    "active": true,
+                    "displayName": "trungmt3 trungmt3",
+                    "id": 2871,
+                    "slug": "trungmt3",
+                    "type": "NORMAL",
+                    "links": {
+                        "self": [
+                            {
+                                "href": "http://bitbucket.digital.vn/users/trungmt3"
+                            }
+                        ]
+                    }
+                },
+                "role": "AUTHOR",
+                "approved": false,
+                "status": "UNAPPROVED"
+            },
+            "reviewers": [
+                {
+                    "user": {
+                        "name": "tungdd9",
+                        "emailAddress": "tungdd9@viettel.com.vn",
+                        "active": true,
+                        "displayName": "tungdd9 tungdd9",
+                        "id": 1144,
+                        "slug": "tungdd9",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/tungdd9"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "tuyendt22",
+                        "emailAddress": "tuyendt22@viettel.com.vn",
+                        "active": true,
+                        "displayName": "tuyendt22 tuyendt22",
+                        "id": 2170,
+                        "slug": "tuyendt22",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/tuyendt22"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "minhnd35",
+                        "emailAddress": "minhnd35@viettel.com.vn",
+                        "active": true,
+                        "displayName": "minhnd35 minhnd35",
+                        "id": 1803,
+                        "slug": "minhnd35",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/minhnd35"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "tuandv20",
+                        "emailAddress": "tuandv20@viettel.com.vn",
+                        "active": true,
+                        "displayName": "tuandv20 tuandv20",
+                        "id": 2523,
+                        "slug": "tuandv20",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/tuandv20"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "quangbv13",
+                        "emailAddress": "quangbv13@viettel.com.vn",
+                        "active": true,
+                        "displayName": "quangbv13 quangbv13",
+                        "id": 2200,
+                        "slug": "quangbv13",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/quangbv13"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "thinhnd30",
+                        "emailAddress": "thinhnd30@viettel.com.vn",
+                        "active": true,
+                        "displayName": "thinhnd30 thinhnd30",
+                        "id": 1209,
+                        "slug": "thinhnd30",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/thinhnd30"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "truonglx7",
+                        "emailAddress": "truonglx7@viettel.com.vn",
+                        "active": true,
+                        "displayName": "Lê Xuân Trường",
+                        "id": 2869,
+                        "slug": "truonglx7",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/truonglx7"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "thangnd63",
+                        "emailAddress": "thangnd63@viettel.com.vn",
+                        "active": true,
+                        "displayName": "thangnd63 thangnd63",
+                        "id": 396,
+                        "slug": "thangnd63",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/thangnd63"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "hoatt69",
+                        "emailAddress": "hoatt69@viettel.com.vn",
+                        "active": true,
+                        "displayName": "hoatt69 hoatt69",
+                        "id": 2004,
+                        "slug": "hoatt69",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/hoatt69"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                }
+            ],
+            "participants": [],
+            "properties": {
+                "mergeResult": {
+                    "outcome": "CLEAN",
+                    "current": false
+                },
+                "resolvedTaskCount": 0,
+                "commentCount": 0,
+                "openTaskCount": 0
+            },
+            "links": {
+                "self": [
+                    {
+                        "href": "http://bitbucket.digital.vn/projects/CDCN/repos/cdcn-customer-service/pull-requests/1333"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1317,
+            "version": 14,
+            "title": "Feature/thienvd/auto link ewallet",
+            "description": "* init feature active eWallet with link VTP\n* Fix query\n* Fix query\n* Encrypt accNo\n* Change logic link wallet\n* remove unuse column\n* add event kafka active ewl\n* add filter list bankcode support link ewl\n* add verify pin api register ewl\n* update validate unlink ewl & add API activeEWallet\n* add logic check when call link wallet timeout\n* add logic check when call link wallet timeout\n* update activeEWallet\n* Merge branch 'feature/thienvd/auto-link-ewallet' of http://bitbucket.digital.vn/scm/cdcn/cdcn-customer-service into feature/thienvd/auto-link-ewallet\n* Fix bug api active ewallet",
+            "state": "OPEN",
+            "open": true,
+            "closed": false,
+            "draft": true,
+            "createdDate": 1749012288389,
+            "updatedDate": 1749099441779,
+            "fromRef": {
+                "id": "refs/heads/feature/thienvd/auto-link-ewallet",
+                "displayId": "feature/thienvd/auto-link-ewallet",
+                "latestCommit": "0552e4f83966dcfbaea5e1cc0bb5042d86059dac",
+                "type": "BRANCH",
+                "repository": {
+                    "slug": "cdcn-customer-service",
+                    "id": 955,
+                    "name": "cdcn-customer-service",
+                    "hierarchyId": "d6f130f732ef852a9a87",
+                    "scmId": "git",
+                    "state": "AVAILABLE",
+                    "statusMessage": "Available",
+                    "forkable": true,
+                    "project": {
+                        "key": "CDCN",
+                        "id": 2,
+                        "name": "cdcn",
+                        "public": false,
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/projects/CDCN"
+                                }
+                            ]
+                        }
+                    },
+                    "public": false,
+                    "archived": false,
+                    "links": {
+                        "clone": [
+                            {
+                                "href": "http://bitbucket.digital.vn/scm/cdcn/cdcn-customer-service.git",
+                                "name": "http"
+                            },
+                            {
+                                "href": "ssh://git@10.254.136.31:8081/cdcn/cdcn-customer-service.git",
+                                "name": "ssh"
+                            }
+                        ],
+                        "self": [
+                            {
+                                "href": "http://bitbucket.digital.vn/projects/CDCN/repos/cdcn-customer-service/browse"
+                            }
+                        ]
+                    }
+                }
+            },
+            "toRef": {
+                "id": "refs/heads/release",
+                "displayId": "release",
+                "latestCommit": "23b8afc044b02da0fd3a89834301a864d2df5b77",
+                "type": "BRANCH",
+                "repository": {
+                    "slug": "cdcn-customer-service",
+                    "id": 955,
+                    "name": "cdcn-customer-service",
+                    "hierarchyId": "d6f130f732ef852a9a87",
+                    "scmId": "git",
+                    "state": "AVAILABLE",
+                    "statusMessage": "Available",
+                    "forkable": true,
+                    "project": {
+                        "key": "CDCN",
+                        "id": 2,
+                        "name": "cdcn",
+                        "public": false,
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/projects/CDCN"
+                                }
+                            ]
+                        }
+                    },
+                    "public": false,
+                    "archived": false,
+                    "links": {
+                        "clone": [
+                            {
+                                "href": "http://bitbucket.digital.vn/scm/cdcn/cdcn-customer-service.git",
+                                "name": "http"
+                            },
+                            {
+                                "href": "ssh://git@10.254.136.31:8081/cdcn/cdcn-customer-service.git",
+                                "name": "ssh"
+                            }
+                        ],
+                        "self": [
+                            {
+                                "href": "http://bitbucket.digital.vn/projects/CDCN/repos/cdcn-customer-service/browse"
+                            }
+                        ]
+                    }
+                }
+            },
+            "locked": false,
+            "author": {
+                "user": {
+                    "name": "os_biplus_ducnlt",
+                    "emailAddress": "ducnlt@biplus.com.vn",
+                    "active": true,
+                    "displayName": "os_biplus_ducnlt os_biplus_ducnlt",
+                    "id": 451,
+                    "slug": "os_biplus_ducnlt",
+                    "type": "NORMAL",
+                    "links": {
+                        "self": [
+                            {
+                                "href": "http://bitbucket.digital.vn/users/os_biplus_ducnlt"
+                            }
+                        ]
+                    }
+                },
+                "role": "AUTHOR",
+                "approved": false,
+                "status": "UNAPPROVED"
+            },
+            "reviewers": [
+                {
+                    "user": {
+                        "name": "duongbh2",
+                        "emailAddress": "duongbh2@viettel.com.vn",
+                        "active": true,
+                        "displayName": "duongbh2 duongbh2",
+                        "id": 2728,
+                        "slug": "duongbh2",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/duongbh2"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "tungdd9",
+                        "emailAddress": "tungdd9@viettel.com.vn",
+                        "active": true,
+                        "displayName": "tungdd9 tungdd9",
+                        "id": 1144,
+                        "slug": "tungdd9",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/tungdd9"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "trungmt3",
+                        "emailAddress": "trungmt3@viettel.com.vn",
+                        "active": true,
+                        "displayName": "trungmt3 trungmt3",
+                        "id": 2871,
+                        "slug": "trungmt3",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/trungmt3"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                }
+            ],
+            "participants": [],
+            "properties": {
+                "mergeResult": {
+                    "outcome": "CONFLICTED",
+                    "current": false
+                },
+                "resolvedTaskCount": 0,
+                "commentCount": 0,
+                "openTaskCount": 0
+            },
+            "links": {
+                "self": [
+                    {
+                        "href": "http://bitbucket.digital.vn/projects/CDCN/repos/cdcn-customer-service/pull-requests/1317"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1326,
+            "version": 9,
+            "title": "update",
+            "state": "OPEN",
+            "open": true,
+            "closed": false,
+            "draft": false,
+            "createdDate": 1749085650310,
+            "updatedDate": 1749085650310,
+            "fromRef": {
+                "id": "refs/heads/feature/haihn5/recover-pin-app-release",
+                "displayId": "feature/haihn5/recover-pin-app-release",
+                "latestCommit": "85def1334560ae3708d6d300fc254701d1ed8c11",
+                "type": "BRANCH",
+                "repository": {
+                    "slug": "cdcn-customer-service",
+                    "id": 955,
+                    "name": "cdcn-customer-service",
+                    "hierarchyId": "d6f130f732ef852a9a87",
+                    "scmId": "git",
+                    "state": "AVAILABLE",
+                    "statusMessage": "Available",
+                    "forkable": true,
+                    "project": {
+                        "key": "CDCN",
+                        "id": 2,
+                        "name": "cdcn",
+                        "public": false,
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/projects/CDCN"
+                                }
+                            ]
+                        }
+                    },
+                    "public": false,
+                    "archived": false,
+                    "links": {
+                        "clone": [
+                            {
+                                "href": "http://bitbucket.digital.vn/scm/cdcn/cdcn-customer-service.git",
+                                "name": "http"
+                            },
+                            {
+                                "href": "ssh://git@10.254.136.31:8081/cdcn/cdcn-customer-service.git",
+                                "name": "ssh"
+                            }
+                        ],
+                        "self": [
+                            {
+                                "href": "http://bitbucket.digital.vn/projects/CDCN/repos/cdcn-customer-service/browse"
+                            }
+                        ]
+                    }
+                }
+            },
+            "toRef": {
+                "id": "refs/heads/release",
+                "displayId": "release",
+                "latestCommit": "23b8afc044b02da0fd3a89834301a864d2df5b77",
+                "type": "BRANCH",
+                "repository": {
+                    "slug": "cdcn-customer-service",
+                    "id": 955,
+                    "name": "cdcn-customer-service",
+                    "hierarchyId": "d6f130f732ef852a9a87",
+                    "scmId": "git",
+                    "state": "AVAILABLE",
+                    "statusMessage": "Available",
+                    "forkable": true,
+                    "project": {
+                        "key": "CDCN",
+                        "id": 2,
+                        "name": "cdcn",
+                        "public": false,
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/projects/CDCN"
+                                }
+                            ]
+                        }
+                    },
+                    "public": false,
+                    "archived": false,
+                    "links": {
+                        "clone": [
+                            {
+                                "href": "http://bitbucket.digital.vn/scm/cdcn/cdcn-customer-service.git",
+                                "name": "http"
+                            },
+                            {
+                                "href": "ssh://git@10.254.136.31:8081/cdcn/cdcn-customer-service.git",
+                                "name": "ssh"
+                            }
+                        ],
+                        "self": [
+                            {
+                                "href": "http://bitbucket.digital.vn/projects/CDCN/repos/cdcn-customer-service/browse"
+                            }
+                        ]
+                    }
+                }
+            },
+            "locked": false,
+            "author": {
+                "user": {
+                    "name": "haihn5",
+                    "emailAddress": "haihn5@viettel.com.vn",
+                    "active": true,
+                    "displayName": "haihn5 haihn5",
+                    "id": 2811,
+                    "slug": "haihn5",
+                    "type": "NORMAL",
+                    "links": {
+                        "self": [
+                            {
+                                "href": "http://bitbucket.digital.vn/users/haihn5"
+                            }
+                        ]
+                    }
+                },
+                "role": "AUTHOR",
+                "approved": false,
+                "status": "UNAPPROVED"
+            },
+            "reviewers": [
+                {
+                    "user": {
+                        "name": "truonglx7",
+                        "emailAddress": "truonglx7@viettel.com.vn",
+                        "active": true,
+                        "displayName": "Lê Xuân Trường",
+                        "id": 2869,
+                        "slug": "truonglx7",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/truonglx7"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "hoatt69",
+                        "emailAddress": "hoatt69@viettel.com.vn",
+                        "active": true,
+                        "displayName": "hoatt69 hoatt69",
+                        "id": 2004,
+                        "slug": "hoatt69",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/hoatt69"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "tungdd9",
+                        "emailAddress": "tungdd9@viettel.com.vn",
+                        "active": true,
+                        "displayName": "tungdd9 tungdd9",
+                        "id": 1144,
+                        "slug": "tungdd9",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/tungdd9"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "thinhnd30",
+                        "emailAddress": "thinhnd30@viettel.com.vn",
+                        "active": true,
+                        "displayName": "thinhnd30 thinhnd30",
+                        "id": 1209,
+                        "slug": "thinhnd30",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/thinhnd30"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "tuandv20",
+                        "emailAddress": "tuandv20@viettel.com.vn",
+                        "active": true,
+                        "displayName": "tuandv20 tuandv20",
+                        "id": 2523,
+                        "slug": "tuandv20",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/tuandv20"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "minhnd35",
+                        "emailAddress": "minhnd35@viettel.com.vn",
+                        "active": true,
+                        "displayName": "minhnd35 minhnd35",
+                        "id": 1803,
+                        "slug": "minhnd35",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/minhnd35"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "thangnd63",
+                        "emailAddress": "thangnd63@viettel.com.vn",
+                        "active": true,
+                        "displayName": "thangnd63 thangnd63",
+                        "id": 396,
+                        "slug": "thangnd63",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/thangnd63"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "quangbv13",
+                        "emailAddress": "quangbv13@viettel.com.vn",
+                        "active": true,
+                        "displayName": "quangbv13 quangbv13",
+                        "id": 2200,
+                        "slug": "quangbv13",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/quangbv13"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "tuyendt22",
+                        "emailAddress": "tuyendt22@viettel.com.vn",
+                        "active": true,
+                        "displayName": "tuyendt22 tuyendt22",
+                        "id": 2170,
+                        "slug": "tuyendt22",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/tuyendt22"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                }
+            ],
+            "participants": [],
+            "properties": {
+                "mergeResult": {
+                    "outcome": "CLEAN",
+                    "current": true
+                },
+                "resolvedTaskCount": 0,
+                "commentCount": 0,
+                "openTaskCount": 0
+            },
+            "links": {
+                "self": [
+                    {
+                        "href": "http://bitbucket.digital.vn/projects/CDCN/repos/cdcn-customer-service/pull-requests/1326"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1310,
+            "version": 14,
+            "title": "Feature/hoangnv71/read qr",
+            "state": "OPEN",
+            "open": true,
+            "closed": false,
+            "draft": false,
+            "createdDate": 1748941888126,
+            "updatedDate": 1748941888126,
+            "fromRef": {
+                "id": "refs/heads/feature/hoangnv71/read-qr",
+                "displayId": "feature/hoangnv71/read-qr",
+                "latestCommit": "49ebcd692a47d14b5997b4ed6c94ac22def9889b",
+                "type": "BRANCH",
+                "repository": {
+                    "slug": "cdcn-customer-service",
+                    "id": 955,
+                    "name": "cdcn-customer-service",
+                    "hierarchyId": "d6f130f732ef852a9a87",
+                    "scmId": "git",
+                    "state": "AVAILABLE",
+                    "statusMessage": "Available",
+                    "forkable": true,
+                    "project": {
+                        "key": "CDCN",
+                        "id": 2,
+                        "name": "cdcn",
+                        "public": false,
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/projects/CDCN"
+                                }
+                            ]
+                        }
+                    },
+                    "public": false,
+                    "archived": false,
+                    "links": {
+                        "clone": [
+                            {
+                                "href": "http://bitbucket.digital.vn/scm/cdcn/cdcn-customer-service.git",
+                                "name": "http"
+                            },
+                            {
+                                "href": "ssh://git@10.254.136.31:8081/cdcn/cdcn-customer-service.git",
+                                "name": "ssh"
+                            }
+                        ],
+                        "self": [
+                            {
+                                "href": "http://bitbucket.digital.vn/projects/CDCN/repos/cdcn-customer-service/browse"
+                            }
+                        ]
+                    }
+                }
+            },
+            "toRef": {
+                "id": "refs/heads/release",
+                "displayId": "release",
+                "latestCommit": "23b8afc044b02da0fd3a89834301a864d2df5b77",
+                "type": "BRANCH",
+                "repository": {
+                    "slug": "cdcn-customer-service",
+                    "id": 955,
+                    "name": "cdcn-customer-service",
+                    "hierarchyId": "d6f130f732ef852a9a87",
+                    "scmId": "git",
+                    "state": "AVAILABLE",
+                    "statusMessage": "Available",
+                    "forkable": true,
+                    "project": {
+                        "key": "CDCN",
+                        "id": 2,
+                        "name": "cdcn",
+                        "public": false,
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/projects/CDCN"
+                                }
+                            ]
+                        }
+                    },
+                    "public": false,
+                    "archived": false,
+                    "links": {
+                        "clone": [
+                            {
+                                "href": "http://bitbucket.digital.vn/scm/cdcn/cdcn-customer-service.git",
+                                "name": "http"
+                            },
+                            {
+                                "href": "ssh://git@10.254.136.31:8081/cdcn/cdcn-customer-service.git",
+                                "name": "ssh"
+                            }
+                        ],
+                        "self": [
+                            {
+                                "href": "http://bitbucket.digital.vn/projects/CDCN/repos/cdcn-customer-service/browse"
+                            }
+                        ]
+                    }
+                }
+            },
+            "locked": false,
+            "author": {
+                "user": {
+                    "name": "hoangnv71",
+                    "emailAddress": "hoangnv71@viettel.com.vn",
+                    "active": true,
+                    "displayName": "hoangnv71 hoangnv71",
+                    "id": 489,
+                    "slug": "hoangnv71",
+                    "type": "NORMAL",
+                    "links": {
+                        "self": [
+                            {
+                                "href": "http://bitbucket.digital.vn/users/hoangnv71"
+                            }
+                        ]
+                    }
+                },
+                "role": "AUTHOR",
+                "approved": false,
+                "status": "UNAPPROVED"
+            },
+            "reviewers": [
+                {
+                    "user": {
+                        "name": "quangbv13",
+                        "emailAddress": "quangbv13@viettel.com.vn",
+                        "active": true,
+                        "displayName": "quangbv13 quangbv13",
+                        "id": 2200,
+                        "slug": "quangbv13",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/quangbv13"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "tuandv20",
+                        "emailAddress": "tuandv20@viettel.com.vn",
+                        "active": true,
+                        "displayName": "tuandv20 tuandv20",
+                        "id": 2523,
+                        "slug": "tuandv20",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/tuandv20"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "thinhnd30",
+                        "emailAddress": "thinhnd30@viettel.com.vn",
+                        "active": true,
+                        "displayName": "thinhnd30 thinhnd30",
+                        "id": 1209,
+                        "slug": "thinhnd30",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/thinhnd30"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "hoatt69",
+                        "emailAddress": "hoatt69@viettel.com.vn",
+                        "active": true,
+                        "displayName": "hoatt69 hoatt69",
+                        "id": 2004,
+                        "slug": "hoatt69",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/hoatt69"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "thangnd63",
+                        "emailAddress": "thangnd63@viettel.com.vn",
+                        "active": true,
+                        "displayName": "thangnd63 thangnd63",
+                        "id": 396,
+                        "slug": "thangnd63",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/thangnd63"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "tungdd9",
+                        "emailAddress": "tungdd9@viettel.com.vn",
+                        "active": true,
+                        "displayName": "tungdd9 tungdd9",
+                        "id": 1144,
+                        "slug": "tungdd9",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/tungdd9"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "tuyendt22",
+                        "emailAddress": "tuyendt22@viettel.com.vn",
+                        "active": true,
+                        "displayName": "tuyendt22 tuyendt22",
+                        "id": 2170,
+                        "slug": "tuyendt22",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/tuyendt22"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "minhnd35",
+                        "emailAddress": "minhnd35@viettel.com.vn",
+                        "active": true,
+                        "displayName": "minhnd35 minhnd35",
+                        "id": 1803,
+                        "slug": "minhnd35",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/minhnd35"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                },
+                {
+                    "user": {
+                        "name": "truonglx7",
+                        "emailAddress": "truonglx7@viettel.com.vn",
+                        "active": true,
+                        "displayName": "Lê Xuân Trường",
+                        "id": 2869,
+                        "slug": "truonglx7",
+                        "type": "NORMAL",
+                        "links": {
+                            "self": [
+                                {
+                                    "href": "http://bitbucket.digital.vn/users/truonglx7"
+                                }
+                            ]
+                        }
+                    },
+                    "role": "REVIEWER",
+                    "approved": false,
+                    "status": "UNAPPROVED"
+                }
+            ],
+            "participants": [],
+            "properties": {
+                "mergeResult": {
+                    "outcome": "CLEAN",
+                    "current": false
+                },
+                "resolvedTaskCount": 0,
+                "commentCount": 0,
+                "openTaskCount": 0
+            },
+            "links": {
+                "self": [
+                    {
+                        "href": "http://bitbucket.digital.vn/projects/CDCN/repos/cdcn-customer-service/pull-requests/1310"
+                    }
+                ]
+            }
+        }
+    ],
+    "start": 0
+}
