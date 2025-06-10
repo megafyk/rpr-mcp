@@ -173,3 +173,37 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(lifespan=lifespan)
 app.mount("/rpr", mcp.streamable_http_app())
+
+
+@app.get("/api/v1/{project}/{repository}/{pull_request_id}/{path}")
+async def api_get_file_diff(
+    project: str, repository: str, pull_request_id: int, path: str
+):
+    return await get_file_diff(project, repository, pull_request_id, path)
+
+
+@app.get("/api/v1/{project}/{repository}/pull-requests")
+async def api_get_pull_requests(project: str, repository: str):
+    return await get_pull_requests(project, repository)
+
+
+@app.get("/api/v1/{project}/{repository}/pull-requests/{pull_request_id}/changes")
+async def api_get_pull_requests_changes(
+    project: str, repository: str, pull_request_id: int
+):
+    return await get_pull_requests_changes(project, repository, pull_request_id)
+
+
+@app.get("/")
+async def root():
+    return {"message": "Welcome mate..."}
+
+
+@app.get("/health")
+async def health_check():
+    """
+    Health check endpoint to verify the service is running.
+    Returns:
+        dict: A simple health check message.
+    """
+    return {"status": "ok", "message": "Service is running."}
