@@ -2,7 +2,7 @@ import contextlib
 import os
 from dotenv import load_dotenv
 from mcp.server.fastmcp import FastMCP
-from fastapi import FastAPI
+from fastapi import FastAPI, Response
 import logging
 import httpx
 import base64
@@ -12,6 +12,24 @@ load_dotenv()
 mcp = FastMCP()
 
 log = logging.getLogger(__name__)
+
+limit = httpx.Limits(
+    max_connections=10, max_keepalive_connections=5, keepalive_expiry=30.0
+)
+
+timeout = httpx.Timeout(60)
+
+# Configure the HTTP client with the specified limits
+httpx_client = httpx.AsyncClient(limits=limit, timeout=timeout)
+
+
+def get_httpx_client() -> httpx.AsyncClient:
+    """
+    Get an instance of the HTTPX client with configured limits.
+    Returns:
+        httpx.AsyncClient: An instance of the HTTPX client.
+    """
+    return httpx_client
 
 
 def get_bitbucket_headers() -> dict:
@@ -46,9 +64,7 @@ async def get_pull_requests(project: str, repository: str) -> str:
     try:
         url = f"{os.getenv('BITBUCKET_URL')}/rest/api/1.0/projects/{project}/repos/{repository}/pull-requests?state={'OPEN'}&start={0}&limit={99999}"
         headers = get_bitbucket_headers()
-        response: httpx.Response = None
-        async with httpx.AsyncClient() as client:
-            response = await client.get(url, headers=headers)
+        response: httpx.Response = await httpx_client.get(url, headers=headers)
 
         response.raise_for_status()  # Raises an HTTPStatusError for bad responses (4xx or 5xx)
 
@@ -60,13 +76,14 @@ async def get_pull_requests(project: str, repository: str) -> str:
         res = []
         for pr in pull_requests:
             pr_info = (
-                f"ID: {pr.get('id', None)}\\n"
-                f"Title: {pr.get('title', None)}\\n"
-                f"State: {pr.get('state', None)}\\n"
-                f"Author: {pr.get('author', {}).get('user', {}).get('displayName', None)}\\n"
+                f"ID: {pr.get('id', None)}\n"
+                f"Title: {pr.get('title', None)}\n"
+                f"State: {pr.get('state', None)}\n"
+                f"Author: {pr.get('author', {}).get('user', {}).get('displayName', None)}\n"
             )
             res.append(pr_info)
-        return "\\n".join(res)
+        log.info("\n".join(res))
+        return "\n".join(res)
     except httpx.HTTPStatusError as e:
         log.error(
             f"HTTP error fetching pull requests: {e.response.status_code} - {e.response.text}"
@@ -96,9 +113,7 @@ async def get_pull_requests_changes(
     try:
         url = f"{os.getenv('BITBUCKET_URL')}/rest/api/1.0/projects/{project}/repos/{repository}/pull-requests/{pull_request_id}/changes?start{0}&limit{99999}"
         headers = get_bitbucket_headers()
-        response: httpx.Response = None
-        async with httpx.AsyncClient() as client:
-            response = await client.get(url, headers=headers)
+        response: httpx.Response = await httpx_client.get(url, headers=headers)
 
         response.raise_for_status()  # Raises an HTTPStatusError for bad responses (4xx or 5xx)
 
@@ -110,11 +125,11 @@ async def get_pull_requests_changes(
         res = []
         for change in changes:
             change_info = (
-                f"File: {change.get('path', {}).get('toString', None)}\\n"
-                f"Type: {change.get('type', None)}\\n"
+                f"File: {change.get('path', {}).get('toString', None)}\n"
+                f"Type: {change.get('type', None)}\n"
             )
             res.append(change_info)
-        return "\\n".join(res)
+        return "\n".join(res)
     except httpx.HTTPStatusError as e:
         log.error(
             f"HTTP error fetching pull request changes: {e.response.status_code} - {e.response.text}"
@@ -146,9 +161,7 @@ async def get_file_diff(
         url = f"{os.getenv('BITBUCKET_URL')}/rest/api/1.0/projects/{project}/repos/{repository}/pull-requests/{pull_request_id}/diff/{path}"
         headers = get_bitbucket_headers()
         headers.set("Accept", "text/plain")
-        response: httpx.Response = None
-        async with httpx.AsyncClient() as client:
-            response = await client.get(url, headers=headers)
+        response: httpx.Response = await httpx_client.get(url, headers=headers)
 
         response.raise_for_status()  # Raises an HTTPStatusError for bad responses (4xx or 5xx)
 
@@ -179,19 +192,20 @@ app.mount("/rpr", mcp.streamable_http_app())
 async def api_get_file_diff(
     project: str, repository: str, pull_request_id: int, path: str
 ):
-    return await get_file_diff(project, repository, pull_request_id, path)
+    return Response(await get_file_diff(project, repository, pull_request_id, path), media_type="text/plain")
 
 
 @app.get("/api/v1/{project}/{repository}/pull-requests")
 async def api_get_pull_requests(project: str, repository: str):
-    return await get_pull_requests(project, repository)
+    return Response(await get_pull_requests(project, repository), media_type="text/plain")
 
 
 @app.get("/api/v1/{project}/{repository}/pull-requests/{pull_request_id}/changes")
 async def api_get_pull_requests_changes(
     project: str, repository: str, pull_request_id: int
 ):
-    return await get_pull_requests_changes(project, repository, pull_request_id)
+
+    return Response(await get_pull_requests_changes(project, repository, pull_request_id), media_type="text/plain")
 
 
 @app.get("/")
