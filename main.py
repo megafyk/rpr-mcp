@@ -32,7 +32,7 @@ def get_httpx_client() -> httpx.AsyncClient:
     return httpx_client
 
 
-def get_bitbucket_headers() -> dict:
+def build_bitbucket_headers() -> dict:
     """
     Get headers for Bitbucket API requests.
     Returns:
@@ -46,13 +46,13 @@ def get_bitbucket_headers() -> dict:
     base64_string = base64_bytes.decode("ascii")
 
     return {
-        "Accept": "application/json",
         "Authorization": f"Basic {base64_string}",
     }
 
 
 @mcp.tool(
-    "Get open pull requests from bitbucket repository for a given project and repository."
+    name="get_open_pull_requests",
+    description="Get open pull requests from bitbucket repository for a given project and repository",
 )
 async def get_pull_requests(project: str, repository: str) -> str:
     """
@@ -63,7 +63,8 @@ async def get_pull_requests(project: str, repository: str) -> str:
     """
     try:
         url = f"{os.getenv('BITBUCKET_URL')}/rest/api/1.0/projects/{project}/repos/{repository}/pull-requests?state={'OPEN'}&start={0}&limit={99999}"
-        headers = get_bitbucket_headers()
+        headers = build_bitbucket_headers()
+        headers["Accept"] = "application/json"
         response: httpx.Response = await httpx_client.get(url, headers=headers)
 
         response.raise_for_status()  # Raises an HTTPStatusError for bad responses (4xx or 5xx)
@@ -82,7 +83,6 @@ async def get_pull_requests(project: str, repository: str) -> str:
                 f"Author: {pr.get('author', {}).get('user', {}).get('displayName', None)}\n"
             )
             res.append(pr_info)
-        log.info("\n".join(res))
         return "\n".join(res)
     except httpx.HTTPStatusError as e:
         log.error(
@@ -98,7 +98,8 @@ async def get_pull_requests(project: str, repository: str) -> str:
 
 
 @mcp.tool(
-    "Get change files from pull requests in a bitbucket repository for a given project and repository."
+    name="get_change_files",
+    description="Get change files from pull requests in a bitbucket repository for a given project and repository",
 )
 async def get_pull_requests_changes(
     project: str, repository: str, pull_request_id: int
@@ -112,7 +113,8 @@ async def get_pull_requests_changes(
     """
     try:
         url = f"{os.getenv('BITBUCKET_URL')}/rest/api/1.0/projects/{project}/repos/{repository}/pull-requests/{pull_request_id}/changes?start{0}&limit{99999}"
-        headers = get_bitbucket_headers()
+        headers = build_bitbucket_headers()
+        headers["Accept"] = "application/json"
         response: httpx.Response = await httpx_client.get(url, headers=headers)
 
         response.raise_for_status()  # Raises an HTTPStatusError for bad responses (4xx or 5xx)
@@ -144,7 +146,8 @@ async def get_pull_requests_changes(
 
 
 @mcp.tool(
-    "Get file diff from pull request in a bitbucket repository for a given project and repository."
+    name="get_file_diff",
+    description="Get file diff from pull request in a bitbucket repository for a given project and repository",
 )
 async def get_file_diff(
     project: str, repository: str, pull_request_id: int, path: str
@@ -159,8 +162,8 @@ async def get_file_diff(
     """
     try:
         url = f"{os.getenv('BITBUCKET_URL')}/rest/api/1.0/projects/{project}/repos/{repository}/pull-requests/{pull_request_id}/diff/{path}"
-        headers = get_bitbucket_headers()
-        headers.set("Accept", "text/plain")
+        headers = build_bitbucket_headers()
+        headers["Accept"] = "text/plain"
         response: httpx.Response = await httpx_client.get(url, headers=headers)
 
         response.raise_for_status()  # Raises an HTTPStatusError for bad responses (4xx or 5xx)
@@ -188,29 +191,36 @@ app = FastAPI(lifespan=lifespan)
 app.mount("/rpr", mcp.streamable_http_app())
 
 
-@app.get("/api/v1/{project}/{repository}/{pull_request_id}/{path}")
+@app.get("/api/v1/pr")
+async def api_get_pull_requests(project: str, repository: str):
+    return Response(
+        await get_pull_requests(project, repository), media_type="text/plain"
+    )
+
+
+@app.get("/api/v1/pr/diff")
 async def api_get_file_diff(
     project: str, repository: str, pull_request_id: int, path: str
 ):
-    return Response(await get_file_diff(project, repository, pull_request_id, path), media_type="text/plain")
+    return Response(
+        await get_file_diff(project, repository, pull_request_id, path),
+        media_type="text/plain",
+    )
 
 
-@app.get("/api/v1/{project}/{repository}/pull-requests")
-async def api_get_pull_requests(project: str, repository: str):
-    return Response(await get_pull_requests(project, repository), media_type="text/plain")
-
-
-@app.get("/api/v1/{project}/{repository}/pull-requests/{pull_request_id}/changes")
+@app.get("/api/v1/pr/change")
 async def api_get_pull_requests_changes(
     project: str, repository: str, pull_request_id: int
 ):
-
-    return Response(await get_pull_requests_changes(project, repository, pull_request_id), media_type="text/plain")
+    return Response(
+        await get_pull_requests_changes(project, repository, pull_request_id),
+        media_type="text/plain",
+    )
 
 
 @app.get("/")
 async def root():
-    return {"message": "Welcome mate..."}
+    return Response({"message": "Welcome mate..."}, media_type="application/json")
 
 
 @app.get("/health")
@@ -220,4 +230,7 @@ async def health_check():
     Returns:
         dict: A simple health check message.
     """
-    return {"status": "ok", "message": "Service is running."}
+    return Response(
+        {"status": "ok", "message": "Service is running."},
+        media_type="application/json",
+    )
