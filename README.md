@@ -47,6 +47,9 @@ uv sync
 uv run fastapi run main.py --host 0.0.0.0 --port 8000
 ```
 
+## Connect to mcp server use vscode mcp client
+https://code.visualstudio.com/docs/copilot/chat/mcp-servers
+
 ## API Endpoints
 
 - `GET /` - Welcome message
@@ -66,16 +69,6 @@ curl "http://localhost:8000/api/v1/pr?project=PROJECT_KEY&repository=repo-name"
 curl "http://localhost:8000/api/v1/pr/diff?project=PROJECT_KEY&repository=repo-name&pull_request_id=123&path=src/file.py"
 ```
 
-## Docker Commands
-
-```bash
-./docker.sh build    # Build image
-./docker.sh run      # Run container
-./docker.sh stop     # Stop container
-./docker.sh logs     # View logs
-./docker.sh shell    # Open shell
-./docker.sh clean    # Remove container and image
-```
 
 ## License
 
